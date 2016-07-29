@@ -39,7 +39,7 @@ jQuery(function(){
                                                     'width': about_icon_width,
                                                     'height': about_icon_width,
                                                     });
-        $("#templatemo_about .about_icon .imgwap i").css({
+        $("#templatemo_AEquipe .about_icon .imgwap i").css({
                                                                                     "font-size":about_icon_size,
                                                                                     "padding-top":about_icon_padding_top,
                                                                                   });
@@ -247,52 +247,51 @@ jQuery(function(){
             });
         });
     }
-    //animate scroll function calll
+    //animate scroll function call
     $("#templatemo_mobile_menu a").anchorAnimate();    
-    //about
+    //A Equipe
     $(document).scroll(function(){
         document_top = $(document).scrollTop();
-        event_wapper_top = $("#templatemo_about").position().top - $('#templatemo_banner_menu').outerHeight();
+        event_wapper_top = $("#templatemo_AEquipe").position().top - $('#templatemo_banner_menu').outerHeight();
         if(document_top<event_wapper_top){
             degree = (360/event_wapper_top)*(document_top);
             event_animate_num = event_wapper_top - document_top;
             event_animate_alpha = (1/document_top)*(event_wapper_top);
-            $("#templatemo_about .imgwap").css({
+            $("#templatemo_AEquipe .imgwap").css({
                         '-webkit-transform': 'rotate(' + degree + 'deg)',
                         '-moz-transform': 'rotate(' + degree + 'deg)',
                         '-ms-transform': 'rotate(' + degree + 'deg)',
                         '-o-transform': 'rotate(' + degree + 'deg)',
                         'transform': 'rotate(' + degree + 'deg)',
             });
-            $("#templatemo_about .about_icon").css({
+            $("#templatemo_AEquipe .about_icon").css({
                         'opacity':event_animate_alpha
             });
         }else{
-            $("#templatemo_about .imgwap").css({
+            $("#templatemo_AEquipe .imgwap").css({
                         '-webkit-transform': 'rotate(' + 360 + 'deg)',
                         '-moz-transform': 'rotate(' + 360 + 'deg)',
                         '-ms-transform': 'rotate(' + 360 + 'deg)',
                         '-o-transform': 'rotate(' + 360 + 'deg)',
                         'transform': 'rotate(' + 360 + 'deg)',
             });
-            $("#templatemo_about .about_icon").css({
+            $("#templatemo_AEquipe .about_icon").css({
                         'opacity':1
             });
         }
     });
-    //events
-    //event
+    //Áreas de Atuação
     $(document).scroll(function(){
         document_top = $(document).scrollTop();
-        event_wapper_top = $("#templatemo_events").position().top - $('#templatemo_banner_menu').outerHeight();
+        event_wapper_top = $("#templatemo_AreasDeAtuacao").position().top - $('#templatemo_banner_menu').outerHeight();
         if(document_top<event_wapper_top){
             event_animate_num = event_wapper_top - document_top;
             event_animate_alpha = (1/event_wapper_top)*(document_top);
-            $("#templatemo_events .event_animate_left").css({'left': -event_animate_num,'opacity':event_animate_alpha});
-            $("#templatemo_events .event_animate_right").css({'left':event_animate_num,'opacity':event_animate_alpha});
+            $("#templatemo_AreasDeAtuacao .event_animate_left").css({'left': -event_animate_num,'opacity':event_animate_alpha});
+            $("#templatemo_AreasDeAtuacao .event_animate_right").css({'left':event_animate_num,'opacity':event_animate_alpha});
         }else{
-            $("#templatemo_events .event_animate_left").css({'left': 0,'opacity':1});
-            $("#templatemo_events .event_animate_right").css({'left':0,'opacity':1});
+            $("#templatemo_AreasDeAtuacao .event_animate_left").css({'left': 0,'opacity':1});
+            $("#templatemo_AreasDeAtuacao .event_animate_right").css({'left':0,'opacity':1});
         }
     }); 
 });
@@ -301,7 +300,7 @@ function initialize(){
     //define map
     var map;
     //lat lng
-    myLatlng = new google.maps.LatLng(16.8496189,96.1288854);
+    myLatlng = new google.maps.LatLng(-25.443664, -49.291054);
     //define style
     var styles = [
         {
@@ -337,7 +336,7 @@ function initialize(){
     var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        title: 'Welcome to Yangon'
+        title: 'Luzzi | Rodrigues | Dias - Advocacia & Consultoria Jurídica'
     });
 }
 google.maps.event.addDomListener(window, 'load', initialize);

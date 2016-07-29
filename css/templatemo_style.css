@@ -1,8 +1,3 @@
-/* 
-Dragonfruit Template 
-http://www.templatemo.com/preview/templatemo_411_dragonfruit 
-*/
-
 body {
     font-family: 'Century Gothic', sans-serif;
 }
@@ -65,7 +60,20 @@ h1 {
 }
 #templatemo_banner_menu #logo_img {
     max-height: 90px;
-    float: left; 
+    float: left;
+}
+#templatemo_banner_menu #logo_img_mobile {
+    display: none;
+}
+@media (max-width: 1299px) {
+    #templatemo_banner_menu #logo_img {
+        display: none;
+    }
+    #templatemo_banner_menu #logo_img_mobile {
+        display: block;
+        max-height: 90px;
+        float: left;
+    }
 }
 #templatemo_banner_menu #logo_text {
     font: normal normal normal 36px/1em 'Century Gothic', sans-serif;
@@ -152,107 +160,107 @@ h1 {
     background: url('../images/templatemo_banner_slide_03.jpg');
     background-size: cover;
 }
-/*about our organization*/
-#templatemo_about {
-    background: #ffffff;
+/*O Escritório*/
+#templatemo_OEscritorio {
+    background: #fff;
     float: left;
 }
-#templatemo_about .about_icon img {
+#templatemo_OEscritorio .about_icon img {
     width: 100%;
 }
-#templatemo_about .about_icon h2 {
+#templatemo_OEscritorio .about_icon h2 {
     text-align: center;
     font: normal normal normal 20px/25px 'Century Gothic', sans-serif;
 }
-#templatemo_about .about_icon .imgwap {
+#templatemo_OEscritorio .about_icon .imgwap {
     text-align: center;
     border-radius: 75px;
 }
-#templatemo_about .about_icon p {
+#templatemo_OEscritorio .about_icon p {
     text-align: center;
     font: normal normal normal 14px/23px 'Century Gothic', sans-serif;
 }
-#templatemo_about .mission {
+#templatemo_OEscritorio .mission {
     background-color: #bd3e25;
     color: #f5bd48;
 }
-#templatemo_about .product {
+#templatemo_OEscritorio .product {
     background-color: #334d5c;
     color: #f5bd48;
 }
-#templatemo_about .testimonial {
+#templatemo_OEscritorio .testimonial {
     background-color: #efc84a;
     color: #ab4921;
 }
-#templatemo_about .statistic {
+#templatemo_OEscritorio .statistic {
     background-color: #334d5c;
     color: #efc84a;
 }
-#templatemo_about #testimonial_text_wap {
+#templatemo_OEscritorio #testimonial_text_wap {
     overflow: hidden;
 }
-#templatemo_about #testimonial_text_wap h2 {
+#templatemo_OEscritorio #testimonial_text_wap h2 {
     font-size: 24px;
     margin: 0;
     padding: 12px 0;
 }
-#templatemo_about #testimonial_text_wap h3 {
+#templatemo_OEscritorio #testimonial_text_wap h3 {
     font-size: 20px;
     margin: 0;
     padding: 12px 0;
 }
-#templatemo_about #testimonial_text_wap img {
+#templatemo_OEscritorio #testimonial_text_wap img {
     margin-bottom: 20px ;
 }
-#templatemo_about #testimonial_text_wap p {
+#templatemo_OEscritorio #testimonial_text_wap p {
     font-size: 14px;
     line-height: 2em;
 }
-#templatemo_about .testimonial_text {
+#templatemo_OEscritorio .testimonial_text {
     width: 100%;
     float: left;
 }
-#templatemo_about .pre_next {
+#templatemo_OEscritorio .pre_next {
     font-size: 70px;
     top: 50%;
     margin-top: -35px;
     position: absolute;
 }
-#templatemo_about .pre_next a {
+#templatemo_OEscritorio .pre_next a {
     color: #6698b5;
     float: left;
 }
-#templatemo_about .pre_next a:hover {
+#templatemo_OEscritorio .pre_next a:hover {
     color: #334d5c;
 }
-#templatemo_about #testimonial_text_wap h1 {
+#templatemo_OEscritorio #testimonial_text_wap h1 {
     font-size: 70px;
     top: 50%;
     margin-top: -35px;
 }
-#templatemo_about .testimonial_top_bottom_spacer {
+#templatemo_OEscritorio .testimonial_top_bottom_spacer {
     padding-bottom: 80px;
 }
-/*events*/
-#templatemo_events {
-    background: #6698b5;
+/*Áreas de Atuação*/
+#templatemo_AreasDeAtuacao {
+    background: #4d1215;
     float: left;
     overflow: hidden;
 }
-#templatemo_events h1{
+#templatemo_AreasDeAtuacao h1{
     color: #fff;
 }
-#templatemo_events .event_box_wap {
+#templatemo_AreasDeAtuacao .event_box_wap {
     overflow:hidden;
     margin-bottom: 30px;
     cursor: pointer;
     position: relative;
 }
-#templatemo_events .event_box_wap .event_box_img {
+#templatemo_AreasDeAtuacao .event_box_wap .event_box_img {
     position: relative;
     top: 0;
 }
-#templatemo_events .event_box_wap .event_box_caption {
+#templatemo_AreasDeAtuacao .event_box_wap .event_box_caption {
     position: relative;
     top: 0;
     padding-bottom: 10px;
@@ -260,24 +268,114 @@ h1 {
     width: 100%;
     border-top: 3px solid #3c6f8c;
 }
-#templatemo_events .event_box_wap h1,
-#templatemo_events .event_box_wap p {
+#templatemo_AreasDeAtuacao .event_box_wap h1,
+#templatemo_AreasDeAtuacao .event_box_wap p {
     margin: 0;
     color: #000000;
     text-align: left;
 }
-#templatemo_events .event_box_wap p {
+#templatemo_AreasDeAtuacao .event_box_wap p {
     padding: 5px 20px 15px 20px;
 }
-#templatemo_events .event_box_wap h1 {
+#templatemo_AreasDeAtuacao .event_box_wap h1 {
     padding: 20px 20px 20px 20px;
     font-size: 24px;
     line-height: 24px;
 }
-/*timeline*/
-#templatemo_timeline {
-    background: #fff;
+/*A equipe*/
+#templatemo_AEquipe {
+    background: #ffffff;
     float: left;
+}
+#templatemo_AEquipe .about_icon img {
+    width: 100%;
+}
+#templatemo_AEquipe .about_icon h2 {
+    text-align: center;
+    font: normal normal normal 20px/25px 'Century Gothic', sans-serif;
+}
+#templatemo_AEquipe .about_icon .imgwap {
+    text-align: center;
+    border-radius: 75px;
+}
+#templatemo_AEquipe .about_icon p {
+    text-align: center;
+    font: normal normal normal 14px/23px 'Century Gothic', sans-serif;
+}
+#templatemo_AEquipe .mission {
+    background-color: #bd3e25;
+    color: #f5bd48;
+}
+#templatemo_AEquipe .product {
+    background-color: #334d5c;
+    color: #f5bd48;
+}
+#templatemo_AEquipe .testimonial {
+    background-color: #efc84a;
+    color: #ab4921;
+}
+#templatemo_AEquipe .statistic {
+    background-color: #334d5c;
+    color: #efc84a;
+}
+#templatemo_AEquipe #testimonial_text_wap {
+    overflow: hidden;
+}
+#templatemo_AEquipe #testimonial_text_wap h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 12px 0;
+}
+#templatemo_AEquipe #testimonial_text_wap h3 {
+    font-size: 20px;
+    margin: 0;
+    padding: 12px 0;
+}
+#templatemo_AEquipe #testimonial_text_wap img {
+    margin-bottom: 20px ;
+}
+#templatemo_AEquipe #testimonial_text_wap p {
+    font-size: 14px;
+    line-height: 2em;
+}
+#templatemo_AEquipe .testimonial_text {
+    width: 100%;
+    float: left;
+}
+#templatemo_AEquipe .pre_next {
+    font-size: 70px;
+    top: 50%;
+    margin-top: -35px;
+    position: absolute;
+}
+#templatemo_AEquipe .pre_next a {
+    color: #6698b5;
+    float: left;
+}
+#templatemo_AEquipe .pre_next a:hover {
+    color: #334d5c;
+}
+#templatemo_AEquipe #testimonial_text_wap h1 {
+    font-size: 70px;
+    top: 50%;
+    margin-top: -35px;
+}
+#templatemo_AEquipe .testimonial_top_bottom_spacer {
+    padding-bottom: 80px;
+}
+/*timeline*/
+.noticias {
+    display: block;
+}
+.artigos {
+    display: none;  
+}
+#templatemo_timeline {
+    background: #4d1215;
+    float: left;
+}
+#templatemo_timeline h1 {
+    color: #fff;
 }
 #templatemo_timeline .container-fluid {
     max-width: 1600px;
@@ -364,7 +462,7 @@ h1 {
 }
 /*contact*/
 #templatemo_contact {
-    background: #6698b5;
+    background: #3b3b3b;
     float: left;
 }
 #templatemo_contact h1 {
@@ -424,9 +522,9 @@ h1 {
 /*templatemo_footer*/
 #templatemo_footer {
     width: 100%;
-    border-top: 2px solid #507f9a;
+    border-top: 2px solid #4d1215;
     height: 70px;
-    background: #447693;
+    background: #4d1215;
     float: left;
 }
 #templatemo_footer p {
@@ -440,7 +538,10 @@ h1 {
 }
 /*  Small devices (tablets, 768px and up)  */
 @media (max-width: 768px ) { 
-    #templatemo_about .pre_next {
+    #templatemo_OEscritorio .pre_next {
+        font-size: 15px;
+    }
+    #templatemo_AEquipe .pre_next {
         font-size: 15px;
     }
     #templatemo_timeline .right_timer {
